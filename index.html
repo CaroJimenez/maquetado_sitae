@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,28 +10,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+ 
     <title>Iniciar Sesión</title>
 </head>
 <body>
+    <h1 class="tittle">SITAE</h1>
     <!--Header para crear fondo de color de pantalla-->
 
     <!---------------------------Formulario Para Iniciar Sesión------------------------>
+    <div>
     <form action="" style="width: 400px;">
+        
         <h1 class="log-in">Iniciar sesión</h1>
         <!--Ingresar usuario-->
-        <label>
+        <label> 
+            
             <i class="fa-solid fa-circle-user"></i>
-            <input type="text" name="" id="user" style="height:25px; width:170px;">
+            <input type="text" name="name" id="user" style="height:25px; width:170px;" placeholder="Usuario">
         </label>
 
         <!--Ingresar contraseña-->
         <label> 
-            <i class="fa-solid fa-circle-user"></i>
-            <input type="password" name="" id="password" style="height:25px; width:170px;">
+          
+            <i class="bi bi-file-lock2-fill"></i>
+            <input type="password" name="" id="password" style="height:25px; width:170px;" placeholder="Contraseña">
         </label>
         <button id="btn">Iniciar sesión</button>
         <img class="logo-utez" src="images/logo-utez.png" alt="Logo de UTEZ">
     </form>
+</div>
 </body>
 </html>
