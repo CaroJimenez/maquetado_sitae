@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/log-in.css">
+    <script src="verificationLogin/login.js"></script>
     <!--Link Iconos-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -19,23 +20,24 @@
 
     <!---------------------------Formulario Para Iniciar Sesión------------------------>
     <div>
-    <form action="" style="width: 400px;">
+    <form id="login-id" method="post"  name="loginform" style="width: 400px;">
         
         <h1 class="log-in">Iniciar sesión</h1>
         <!--Ingresar usuario-->
         <label> 
             
             <i class="fa-solid fa-circle-user"></i>
-            <input type="text" name="name" id="user" style="height:25px; width:170px;" placeholder="Usuario">
+            <input type="text" name="user" id="username" style="height:25px; width:170px;" placeholder="Usuario">
         </label>
 
         <!--Ingresar contraseña-->
         <label> 
           
             <i class="bi bi-file-lock2-fill"></i>
-            <input type="password" name="" id="password" style="height:25px; width:170px;" placeholder="Contraseña">
+            <input type="password" name="password" id="password" style="height:25px; width:170px;" placeholder="Contraseña">
         </label>
-        <button id="btn">Iniciar sesión</button>
+
+        <input type="button" value="Login" id="submit" onclick="validate()"/>
         <img class="logo-utez" src="images/logo-utez.png" alt="Logo de UTEZ">
     </form>
 </div>
